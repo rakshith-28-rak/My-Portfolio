@@ -1,0 +1,195 @@
+/* Optimized background - replaced huge image with CSS gradient */
+body {
+    background-color: black;
+    color: var(--text-color);
+    /* Removed huge external image, using gradient instead */
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(228, 54, 54, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(228, 54, 54, 0.1) 0%, transparent 50%),
+      linear-gradient(to bottom, #0a0a0a, #000000);
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  /* Improved responsive units */
+  .navbar {
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem; /* 20px → rem */
+    width: 90%;
+    max-width: 1400px; /* Added max-width */
+    margin: 0.625rem auto; /* 10px → rem */
+    border-radius: 50px;
+  }
+  
+  .navbar-conts {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.875rem; /* 30px → rem */
+    align-items: center;
+    margin-right: 1.875rem; /* 30px → rem */
+    font-size: 1.125rem; /* 18px → rem */
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  /* Fixed link styling for accessibility */
+  .link-to-page {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    padding: 0.5rem 0; /* Added padding for better click area */
+  }
+  
+  .link-to-page:hover,
+  .link-to-page:focus { /* Added focus state for keyboard navigation */
+    color: var(--border-color);
+    transform: scale(1.3);
+    outline: none; /* Remove default outline since we have transform */
+  }
+  
+  /* Image improvements */
+  .image {
+    width: 18.75rem; /* 300px → rem */
+    height: 18.75rem; /* 300px → rem */
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 0.25rem solid #E43636; /* 4px → rem */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem; /* 100px → rem */
+    margin: 5.625rem auto; /* 90px → rem */
+    max-width: 75rem; /* 1200px → rem */
+  }
+  
+  /* Typography improvements */
+  .heading {
+    font-size: 3.125rem; /* 50px → rem */
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 0.625rem; /* 10px → rem */
+  }
+  
+  .subheading {
+    font-size: 1.6875rem; /* 27px → rem */
+    line-height: 1.4; /* Better readability */
+  }
+  
+  .name {
+    font-size: 3.4375rem; /* 55px → rem */
+    overflow: hidden;
+    border-right: 0.125rem solid; /* 2px → rem */
+    white-space: nowrap;
+    animation: typeAndFade 2s forwards;
+    color: var(--border-color);
+    display: inline-block; 
+  }
+  
+  /* Removed duplicate .about-me styles that conflict */
+  .about-me {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+  
+  /* Footer improvements */
+  footer {
+    color: var(--text-color);
+    width: 70%;
+    text-align: center;
+  }
+  
+  .footer-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+  
+  .moto {
+    font-size: 1.5rem; /* Responsive font size */
+  }
+  
+  .mot {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.3125rem; /* 5px → rem */
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.875rem; /* 30px → rem */
+  }
+  
+  .mot::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.125rem; /* 2px → rem */
+    background: #E43636;
+    transition: width 0.3s;
+  }
+  
+  .mot:hover::after {
+    width: 100%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      gap: 3.125rem; /* 50px → rem */
+      text-align: center;
+    }
+    
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+      width: 95%;
+    }
+    
+    .navbar-conts {
+      margin-right: 0;
+    }
+  }
+  
+  /* Animation */
+  @keyframes typeAndFade {
+    0% { 
+      width: 0; 
+      border-right-color: white;
+    }
+    80% { 
+      width: 55%; 
+      border-right-color: white;
+    }
+    100% { 
+      width: 55%; 
+      border-right-color: transparent;
+    }
+  }
+  
+  /* Scrollbar - keep as is */
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  .color-strip {
+    height: 0.625rem; /* 10px → rem */
+    background: #E43636;
+    width: 100%;
+  }

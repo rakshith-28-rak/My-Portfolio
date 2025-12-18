@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div>
+    <div >
       <div className="color-strip"></div>
       <nav>
         <div className="navbar">
@@ -68,7 +68,7 @@ const Contact = () => {
           <div className="face face1">
             <div className="content">
               <div className="icon">
-              <i class="fa fa-address-card" aria-hidden="true"></i>
+              <i className="fa fa-address-card" aria-hidden="true"></i>
               </div>
             </div>
           </div>

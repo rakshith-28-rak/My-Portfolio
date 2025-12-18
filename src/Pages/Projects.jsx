@@ -27,7 +27,7 @@ const Projects = () => {
                   </Link>
                 </h3>
                 <h3>
-                  <a href="" className="link-to-page">
+                  <a href="/contact" className="link-to-page">
                     Contact
                   </a>
                 </h3>
@@ -64,8 +64,7 @@ const Projects = () => {
             description={"lorem10"}
             linkToView={"#"}
           />
-          {/* <ProjectCard /> */}
-          {/* <ProjectCard /> */}
+          
         </div>
       </div>
     </>

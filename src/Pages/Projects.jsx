@@ -45,8 +45,10 @@ const Projects = () => {
           <ProjectCard
             image="/photos/movieDB.PNG"
             title={"Movie site"}
-            description={"A dynamic movie browsing application built with React and styled using Bootstrap. The project allows users to explore movies categorized by genres. Each category showcases a list of movies, offering a seamless and interactive way to browse through different movie collections. The app focuses on clean UI and performance."}
-            linkToView={"https://movie-showcase-v1.netlify.app/"}
+            description={
+              "A dynamic movie browsing application built with React and styled using Bootstrap. The project allows users to explore movies categorized by genres. Each category showcases a list of movies, offering a seamless and interactive way to browse through different movie collections. The app focuses on clean UI and performance."
+            }
+            linkToView={"https://movies-showcase-v1.netlify.app/"}
           />
           <ProjectCard
             image="/photos/pixaway.PNG"
@@ -55,7 +57,7 @@ const Projects = () => {
               "A frontend clone of the Pixabay website built using React and Bootstrap. The project allows users to browse and search for images with a clean, user-friendly interface, focusing on component-based architecture and efficient UI rendering."
             }
             linkToView={"https://pixaway-0028.netlify.app/"}
-            />
+          />
           <ProjectCard
             image={
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWyrKDdvT64sow11h0xjnDoD3S3ATiwW7RQ&s"
@@ -64,7 +66,6 @@ const Projects = () => {
             description={"lorem10"}
             linkToView={"#"}
           />
-          
         </div>
       </div>
     </>

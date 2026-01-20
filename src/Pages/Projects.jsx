@@ -60,11 +60,27 @@ const Projects = () => {
           />
           <ProjectCard
             image={
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWyrKDdvT64sow11h0xjnDoD3S3ATiwW7RQ&s"
+              "/photos/mealDB.PNG"
             }
-            title={"First"}
-            description={"lorem10"}
-            linkToView={"#"}
+            title={"Food - display"}
+            description={"A dynamic cuisine exploration web app developed using React and the MealDB API, allowing users to search and discover food names from multiple countries worldwide."}
+            linkToView={"https://food-display.netlify.app/"}
+          />
+          <ProjectCard
+            image={
+              "/photos/MusicPlayer.PNG"
+            }
+            title={"Music player"}
+            description={"A React-based music player UI built with Tailwind CSS, using self-created static data to display playlists, albums, and track details in a clean, modern layout."}
+            linkToView={"https://the-music-player-v1.netlify.app/"}
+          />
+          <ProjectCard
+            image={
+              "/photos/coffee-website.PNG"
+            }
+            title={"Coffee website"}
+            description={"Developed a single-page, scrollable coffee store website highlighting product sections, branding, and layout structure with a user-friendly design."}
+            linkToView={"https://coffee-website-0001.netlify.app/"}
           />
         </div>
       </div>

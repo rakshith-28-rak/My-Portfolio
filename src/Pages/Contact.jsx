@@ -75,7 +75,7 @@ const Contact = () => {
           <div className="face face2">
             <div className="content">
               <h3>
-                <a href="https://twitter." target="_blank">
+                <a href="https://docs.google.com/document/d/16Y4zjsbWlyjpY2ydIsURCQoSssHPlpXZsuD-QZ65CnE/edit?usp=sharing" target="_blank">
                   @Rakshith
                 </a>
               </h3>
